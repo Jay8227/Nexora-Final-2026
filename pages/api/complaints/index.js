@@ -4,8 +4,8 @@
  * POST → submit a new complaint (AI classification + duplicate detection)
  */
 
-import db from '../../lib/db';
-import { allow, withErrorHandler, classifyComplaint, detectDuplicates, extractZone } from '../../lib/middleware';
+import db from '../../../lib/db';
+import { allow, withErrorHandler, classifyComplaint, detectDuplicates, extractZone } from '../../../lib/middleware';
 
 export default withErrorHandler(async function handler(req, res) {
   if (!allow(req, res, ['GET', 'POST'])) return;

@@ -7,8 +7,8 @@
  * questions about traffic, floods, complaints, emergencies.
  */
 
-import db from '../../lib/db';
-import { allow, withErrorHandler } from '../../lib/middleware';
+import db from '../../../lib/db';
+import { allow, withErrorHandler } from '../../../lib/middleware';
 
 const SYSTEM_PROMPT = `You are Nexora Bot, the official AI assistant of NEXORA Smart City Platform for Navi Mumbai.
 You help citizens with:

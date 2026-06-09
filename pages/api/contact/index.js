@@ -3,7 +3,7 @@
  * POST → submit contact form / citizen feedback
  */
 
-import { allow, withErrorHandler } from '../../lib/middleware';
+import { allow, withErrorHandler } from '../../../lib/middleware';
 
 if (!global._feedbackStore) global._feedbackStore = [];
 

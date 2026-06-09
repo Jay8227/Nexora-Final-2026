@@ -4,8 +4,8 @@
  * POST → trigger pump / barrier (admin action)
  */
 
-import db from '../../lib/db';
-import { allow, withErrorHandler } from '../../lib/middleware';
+import db from '../../../lib/db';
+import { allow, withErrorHandler } from '../../../lib/middleware';
 
 /** Simulate rainfall drift */
 function driftRainfall(current) {

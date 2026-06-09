@@ -4,8 +4,8 @@
  * POST → update a zone's density (sensor push simulation)
  */
 
-import db from '../../lib/db';
-import { allow, withErrorHandler } from '../../lib/middleware';
+import db from '../../../lib/db';
+import { allow, withErrorHandler } from '../../../lib/middleware';
 
 /** Simulate realistic density drift */
 function driftDensity(current) {

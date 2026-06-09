@@ -3,8 +3,8 @@
  * GET → aggregated city-wide metrics for Dashboard page
  */
 
-import db from '../../lib/db';
-import { allow, withErrorHandler } from '../../lib/middleware';
+import db from '../../../lib/db';
+import { allow, withErrorHandler } from '../../../lib/middleware';
 
 export default withErrorHandler(async function handler(req, res) {
   if (!allow(req, res, ['GET'])) return;

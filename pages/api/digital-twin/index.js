@@ -3,8 +3,8 @@
  * GET → full city snapshot: all 9 zones with traffic + flood + complaints overlay
  */
 
-import db from '../../lib/db';
-import { allow, withErrorHandler } from '../../lib/middleware';
+import db from '../../../lib/db';
+import { allow, withErrorHandler } from '../../../lib/middleware';
 
 const ZONE_COORDS = {
   Vashi:            { lat: 19.0748, lng: 73.0071 },

@@ -5,8 +5,8 @@
  * PATCH /api/emergency/[id] → update emergency status
  */
 
-import db from '../../lib/db';
-import { allow, withErrorHandler } from '../../lib/middleware';
+import db from '../../../lib/db';
+import { allow, withErrorHandler } from '../../../lib/middleware';
 
 /** Find the nearest available hospital to incident location */
 function nearestHospital(zone) {

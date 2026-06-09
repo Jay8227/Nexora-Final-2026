@@ -4,8 +4,8 @@
  * POST → add user
  */
 
-import db from '../../lib/db';
-import { allow, withErrorHandler } from '../../lib/middleware';
+import db from '../../../lib/db';
+import { allow, withErrorHandler } from '../../../lib/middleware';
 
 const systemAlerts = [
   { id: 1, type: 'traffic', message: 'Kharghar zone hit RED — signal adaptive mode activated', time: new Date(Date.now() - 5 * 60000).toISOString(), priority: 'high' },
