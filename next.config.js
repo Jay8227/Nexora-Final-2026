@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  turbopack: {
-    resolveAlias: {}
-  }
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
